@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { LogIn, UserPlus } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -32,12 +33,14 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           <Link to="/login">
             <Button variant="outline" className="border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white">
-              Login
+              <LogIn className="mr-2 h-4 w-4" />
+              Account Login
             </Button>
           </Link>
           <Link to="/register">
             <Button className="bg-brand-purple hover:bg-brand-blue text-white">
-              Sign Up
+              <UserPlus className="mr-2 h-4 w-4" />
+              Get Started
             </Button>
           </Link>
         </div>
