@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { LogIn, LayoutDashboard } from "lucide-react";
+import { LogIn } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -30,19 +30,7 @@ const Navbar = () => {
           </Link>
         </div>
         
-        <div className="flex items-center space-x-3">
-          <Link to="/dashboard/vendor">
-            <Button variant="ghost" className="text-gray-600 hover:text-brand-purple">
-              <LayoutDashboard className="mr-2 h-4 w-4" />
-              Vendor Dashboard
-            </Button>
-          </Link>
-          <Link to="/dashboard/sponsor">
-            <Button variant="ghost" className="text-gray-600 hover:text-brand-blue">
-              <LayoutDashboard className="mr-2 h-4 w-4" />
-              Sponsor Dashboard
-            </Button>
-          </Link>
+        <div className="flex items-center">
           <Link to="/login">
             <Button variant="outline" className="border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white">
               <LogIn className="mr-2 h-4 w-4" />
